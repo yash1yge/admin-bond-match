@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+.admin-table {
+  width: 100%;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px 10px;
+}
+
+.admin-table thead tr {
+  border-radius: 10px 10px 0 0;
+}
+
+.admin-table thead tr th:first-child {
+  border-radius: 10px 0 0 0;
+}
+
+.admin-table thead th {
+  text-align: center;
+  padding: 10px 15px;
+  color: #625afa;
+  font-weight: 600;
+}
+
+.admin-table tbody td {
+  padding: 8px 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.admin-table tbody tr,
+.admin-table thead th {
+  border-bottom: 1px solid #eee;
+}
+
+.admin-table tbody tr:nth-child(even) {
+  background-color: #f2f1ff;
+}
+
+@media (max-width: 425px) {
+  .admin-table {
+    width: 375px;
+    overflow-x: auto;
+  }
+}
